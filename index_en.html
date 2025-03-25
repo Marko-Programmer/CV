@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marko Zhenchuk - CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/curriculum-vitae.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="description" content="CV of Marko Zhenchuk">
+    <meta property="og:title" content="Marko Zhenchuk - CV">
+    <meta property="og:description" content="Marko Zhenchuk's resume">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+
+
+    <div class="wrapper">
+
+        <header class="header">        </header>
+
+
+        <div class="content">
+
+
+            <aside class="aside">
+
+                <div class="img_container">
+                    <img src="img/CV_Photo.jpg" alt="Profile photo" class="cv_img">
+                </div>
+                <section class="contact">
+                    <ul class="contact_list">
+                        <li class="contact_item">
+                            <a href="tel:+48730014539" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/telephone.png" alt="mobile svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">+48-730-014-539</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="tel:+380684699387" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/telephone.png" alt="mobile svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">+380-68-469-93-87</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="mailto:zhenchukmarko@gmail.com" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/post.png" alt="post svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">zhenchukmarko@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://www.linkedin.com/in/marko-zhenchuk-812726357/" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/linkedin.png" alt="site svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://github.com/Marko-Programmer" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/github.png" alt="site svg" class="contact_svg"> 
+                                </div>
+                                <span class="contact_text">GitHub</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://leetcode.com/u/Marko_Zh/" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/leetcode.svg" alt="site svg" class="contact_svg"> 
+                                </div>
+                                <span class="contact_text">LeetCode</span>
+                            </a>
+                        </li>
+                    </ul>  
+                </section>
+                <section class="aside_block">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Hard Skills</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items"><span>Programming:</span> C++, SQL, JavaScript</li>
+                        <li class="aside_items"><span>Databases:</span> MySQL, Oracle SQL</li>
+                        <li class="aside_items"><span>Web Tech:</span> HTML5, CSS (SASS)</li>
+                        <li class="aside_items"><span>Tools:</span> Git, Visual Studio</li>
+                    </ul>
+                </section>
+                <section class="aside_block">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Soft Skills</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items">Problem Solving</li>
+                        <li class="aside_items">Analytical Thinking</li>
+                        <li class="aside_items">Self-Learning</li>
+                        <li class="aside_items">Teamwork</li>
+                        <li class="aside_items">Communication</li>
+                    </ul>
+                </section>
+                <section class="aside_block">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Language</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items">English - B1</li>
+                        <li class="aside_items">German - A2</li>
+                        <li class="aside_items">Polish - B1</li>
+                        <li class="aside_items">Ukrainian - С1</li>
+                    </ul>
+                </section>
+                <section class="aside_block">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Hobbies</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items">Car Enthusiast</li>
+                        <li class="aside_items">Music lover</li>
+                        <li class="aside_items">Self-Improvement </li>
+                    </ul>
+                </section>
+
+            </aside>
+
+
+            <main class="main">
+                <div class="lang_block">
+                    <span class="lang_label">Language:</span>
+                    <div class="lang_dropdown">
+                        <button class="lang_button" id="lang_button">EN</button>
+                        <div class="lang_menu">
+                            <a href="index_en.html" class="lang_item" id="en_link">EN</a>
+                            <a href="index_pl.html" class="lang_item" id="pl_link">PL</a>
+                            <a href="index_de.html" class="lang_item" id="de_link">DE</a>                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="name_block">
+                    <h1 class="name">Marko zhenchuk</h1>
+                    <p class="position">SOFTWARE DEVELOPER</p>
+                </div>
+                <section class="profile">
+                    <div class="profile_title_block">
+                        <img src="img/profile.png" alt="profile svg" class="profile_svg">
+                        <h2 class="profile_title">Profile</h2>
+                    </div>
+                    <p class="title_text">Motivated and goal-oriented beginner developer with a deep interest in algorithms, data structures, and modern technologies.
+                        I aim to become a professional who inspires others to learn and develop. Open to new challenges and ready to learn quickly.</p>
+                </section>
+                <section class="education">
+                    <div class="education_title_block">
+                        <img src="img/education.png" alt="education svg" class="education_svg">
+                        <h2 class="education_title">Education</h2>
+                    </div>
+                    <div class="education_item">
+                        <div class="education_years">
+                            <p class="education_year">2024 – 2025</p>
+                        </div>
+                        <div class="education_description">
+                            <h3 class="education_item_title">Opole University of Technology</h3>
+                            <h4 class="education_faculty">Computer Science</h4>
+                            <ul class="education_list">
+                                <li class="education_list_item">Maintaining excellent academic performance </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education_item">
+                        <div class="education_years">
+                            <p class="education_year">2023 - 2024</p>
+                        </div>
+                        <div class="education_description">
+                            <h3 class="education_item_title">Lviv Polytechnic National University</h3>
+                            <h4 class="education_faculty">Computer Science</h4>
+                            <ul class="education_list">
+                                <li class="education_list_item"> Completed the first year with distinction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="experience">
+                    <div class="experience_title_block">
+                        <img src="img/experience.png" alt="experience svg" class="experience_svg">
+                        <h2 class="experience_title">Experience</h2>
+                    </div>
+                
+                    <div class="experience_item">
+                        <h4 class="experience_item_name">Perfect Pickling Recipes</h4>
+                        <p class="experience_item_description"><span>Description:</span> A responsive multi-page website with pop-ups, burger menu logic, and interactive elements. Securely hosted online with an SSL certificate.</p>
+                        <p class="experience_item_technologies"><span>Technologies:</span>  HTML, CSS, SCSS, JavaScript</p>
+                        <p class="experience_item_role"><span>Role:</span>  Frontend Developer, UI/UX Designer & Deployment Engineer.
+                            Fully designed, developed, and deployed the website, ensuring adaptability, interactivity, and secure hosting.</p>
+                    </div>
+                
+                    <div class="experience_item">
+                        <h4 class="experience_item_name">ShopDatabase Manager</h4>
+                        <p class="experience_item_description"><span>Description:</span> A backend console application written in C++ for managing a shop database. It connects to a MySQL database, executes SQL queries, and retrieves customer records for display. </p>
+                        <p class="experience_item_technologies"><span>Technologies:</span> C++, MySQL, MySQL Connector/C++</p>
+                        <p class="experience_item_role"><span>Role:</span> Backend developer</p>
+                    </div>
+                
+                    <div class="experience_item">
+                        <h4 class="experience_item_name" id="experience_item_name_other">Developed multiple adaptive websites (available on GitHub) and solved over 100 problems on LeetCode, enhancing skills in algorithms and data structures.</h4> 
+                    </div>
+                
+                </section>
+                <section class="consent">
+                    <div class="consent_title_block">
+                        <img src="img/shield.png" alt="consent svg" class="consent_svg">
+                        <h2 class="consent_title">Consent for Data Processing</h2>
+                    </div>
+                    <p class="consent_text">I hereby consent to the processing of my personal data for the purposes of the recruitment process in accordance with GDPR.</p>
+                </section>
+                <section class="download">
+                    <a href="pdf/CV_(EN).pdf" download="Marko Zhenchuk's resume.pdf" class="download-button">Download CV</a>
+                </section>
+
+
+
+
+ 
+                <section class="contact" id="hidden_segment">
+                    <ul class="contact_list">
+                        <li class="contact_item">
+                            <a href="tel:+48730014539" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/telephone.png" alt="mobile svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">+48-730-014-539</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="tel:+380684699387" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/telephone.png" alt="mobile svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">+380-68-469-93-87</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="mailto:zhenchukmarko@gmail.com" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/post.png" alt="post svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">zhenchukmarko@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://www.linkedin.com/in/marko-zhenchuk-812726357/" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/linkedin.png" alt="site svg" class="contact_svg">
+                                </div>
+                                <span class="contact_text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://github.com/Marko-Programmer" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/github.png" alt="site svg" class="contact_svg"> 
+                                </div>
+                                <span class="contact_text">GitHub</span>
+                            </a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://leetcode.com/u/Marko_Zh/" class="contact_link">
+                                <div class="contact_svg_block">
+                                    <img src="img/leetcode.svg" alt="site svg" class="contact_svg"> 
+                                </div>
+                                <span class="contact_text">LeetCode</span>
+                            </a>
+                        </li>
+                    </ul>  
+                </section>
+                <section class="aside_block" id="hidden_segment">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Hard Skills</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items"><span>Programming:</span> C++, SQL, JavaScript</li>
+                        <li class="aside_items"><span>Databases:</span> MySQL, Oracle SQL</li>
+                        <li class="aside_items"><span>Web Tech:</span> HTML5, CSS (SASS)</li>
+                        <li class="aside_items"><span>Tools:</span> Git, Visual Studio</li>
+                    </ul>
+                </section>
+                <section class="aside_block" id="hidden_segment">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Soft Skills</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items">Problem Solving</li>
+                        <li class="aside_items">Analytical Thinking</li>
+                        <li class="aside_items">Self-Learning</li>
+                        <li class="aside_items">Teamwork</li>
+                        <li class="aside_items">Communication</li>
+                    </ul>
+                </section>
+                <section class="aside_block" id="hidden_segment">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Language</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items">English - B1</li>
+                        <li class="aside_items">German - A2</li>
+                        <li class="aside_items">Polish - B1</li>
+                        <li class="aside_items">Ukrainian - С1</li>
+                    </ul>
+                </section>
+                <section class="aside_block" id="hidden_segment">
+                    <div class="aside_titleBlock">
+                        <h2 class="aside_title">Hobbies</h2>
+                    </div>
+                    <ul class="aside_list">
+                        <li class="aside_items">Car Enthusiast</li>
+                        <li class="aside_items">Music lover</li>
+                        <li class="aside_items">Self-Improvement </li>
+                    </ul>
+                </section>
+            </main>
+
+        </div>
+
+        <footer class="footer"></footer>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
